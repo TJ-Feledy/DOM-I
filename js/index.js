@@ -41,13 +41,24 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', "img/logo.png");
 
+const hNav = document.querySelector('header nav');
+const prepended = document.createElement('a');
+const appended = document.createElement('a');
 const headerNav = document.querySelectorAll('header nav a');
+const navArray = Array.from(headerNav);
+hNav.insertBefore(prepended, headerNav[0]);
+prepended.textContent = 'Prepended!';
+prepended.style.color = 'red'
 headerNav[0].textContent = 'Services';
 headerNav[1].textContent = 'Product';
 headerNav[2].textContent = 'Vision';
 headerNav[3].textContent = 'Features';
 headerNav[4].textContent = 'About';
 headerNav[5].textContent = 'Contact';
+navArray.map(element => {return element.style.color = 'green'});
+hNav.appendChild(appended);
+appended.textContent = 'Appended!';
+appended.style.color = 'red';
 
 // const headerImg = document.querySelector('#logo-img');
 // headerImg.src = 'img/logo.png';

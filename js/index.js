@@ -39,7 +39,7 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"]);
+logo.setAttribute('src', "img/logo.png");
 
 const headerNav = document.querySelectorAll('header nav a');
 headerNav[0].textContent = 'Services';
@@ -49,9 +49,39 @@ headerNav[3].textContent = 'Features';
 headerNav[4].textContent = 'About';
 headerNav[5].textContent = 'Contact';
 
-const headerImg = document.querySelector('#logo-img');
-headerImg.src = 'img/logo.png';
+// const headerImg = document.querySelector('#logo-img');
+// headerImg.src = 'img/logo.png';
 
 const lineBreak = document.createElement('br');
 const ctaH1 = document.querySelector('.cta-text h1');
-ctaH1.textContent = `DOM Is Awesome`;
+ctaH1.textContent = ('DOM Is Awesome');
+
+const ctaButton = document.querySelector('.cta-text button');
+ctaButton.textContent = 'Get Started';
+
+const ctaImg = document.querySelector('#cta-img');
+ctaImg.src = 'img/header-img.png';
+
+const topH4 = document.querySelectorAll('.top-content h4');
+topH4[0].textContent = 'Features';
+topH4[1].textContent = 'About';
+const topP = document.querySelectorAll('.top-content p');
+topP[0].textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+topP[1].textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+
+const midImg = document.querySelector('.middle-img');
+midImg.src = 'img/mid-page-accent.jpg';
+
+const bottomH4 = document.querySelectorAll('.bottom-content h4');
+bottomH4[0].textContent = 'Services';
+bottomH4[1].textContent = 'Product';
+bottomH4[2].textContent = 'Vision';
+const bottomP = document.querySelectorAll('.bottom-content p');
+bottomP[0].textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+bottomP[1].textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+bottomP[2].textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+
+const contactH4 = document.querySelector('.contact h4');
+contactH4.textContent = 'Contact'
+const contactP = document.querySelectorAll('.contact p');
+contactP[0].textContent = '123 Way 456 Street'

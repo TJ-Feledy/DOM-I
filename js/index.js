@@ -51,10 +51,16 @@ headerNav[5].textContent = 'Contact';
 
 // const headerImg = document.querySelector('#logo-img');
 // headerImg.src = 'img/logo.png';
-
+const lineBreak2 = document.createElement('br');
+const lineBreak1 = document.createElement('br');
 const lineBreak = document.createElement('br');
 const ctaH1 = document.querySelector('.cta-text h1');
-ctaH1.textContent = ('DOM Is Awesome');
+ctaH1.textContent = 'DOM';
+ctaH1.append(lineBreak1);
+ctaH1.append('Is');
+ctaH1.append(lineBreak2);
+ctaH1.append('Awesome');
+
 
 const ctaButton = document.querySelector('.cta-text button');
 ctaButton.textContent = 'Get Started';
@@ -84,4 +90,8 @@ bottomP[2].textContent = 'Vision content elementum magna eros, ac posuere elvit 
 const contactH4 = document.querySelector('.contact h4');
 contactH4.textContent = 'Contact'
 const contactP = document.querySelectorAll('.contact p');
-contactP[0].textContent = '123 Way 456 Street'
+contactP[0].textContent = '123 Way 456 Street';
+contactP[0].append(lineBreak);
+contactP[0].append('Somewhere, USA');
+
+

@@ -46,7 +46,7 @@ const prepended = document.createElement('a');
 const appended = document.createElement('a');
 const headerNavA = document.querySelectorAll('header nav a');
 const navArray = Array.from(headerNavA);
-hNav.insertBefore(prepended, headerNavA[0]);
+hNav.prepend(prepended);
 prepended.textContent = 'Prepended!';
 prepended.style.color = 'red'
 headerNavA[0].textContent = 'Services';
